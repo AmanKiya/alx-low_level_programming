@@ -16,7 +16,7 @@ int main(void)
 	char str[] = "Last digit of";
 
 	srand(time(0));
-	n = rand () - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 	/*your code goes here*/
 	L = n % 10;
 
