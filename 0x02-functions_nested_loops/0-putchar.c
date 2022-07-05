@@ -9,7 +9,7 @@ int main(void)
 {
 	char *pc = "_putchar";
 
-	while(*pc)
+	while (*pc)
 	{
 		_putchar(*pc);
 		pc++;
