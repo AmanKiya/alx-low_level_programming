@@ -12,7 +12,7 @@ int main(void)
 	while(*pc)
 	{
 		_putchar(*pc);
-		*pc++;
+		pc++;
 	}
 	_putchar('\n');
 	return (0);
