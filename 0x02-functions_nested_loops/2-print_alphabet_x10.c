@@ -12,6 +12,7 @@ void print_alphabet_x10(void)
 	for (floop = 0; floop < 10; floop++)
 	{
 		int c;
+
 		for (c = 'a'; c <= 'z'; c++)
 		{
 			_putchar(c);
