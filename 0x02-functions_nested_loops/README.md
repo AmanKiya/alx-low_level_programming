@@ -1,1 +1,1 @@
- this is the readme file form the function and nested while loops
+this is a read me file to the project folder of functions and nested loops
