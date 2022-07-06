@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - a function that prints all natural from n to 98, 
- * Followed by a new line
+ * print_to_98 - a function that prints all natural from n to 98
+ *  Followed by a new line
  * @n: the integer input
  *
  * Return: always 0
