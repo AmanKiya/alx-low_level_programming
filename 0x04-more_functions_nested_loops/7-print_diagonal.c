@@ -2,8 +2,8 @@
 
 /**
  * print_diagonal - entry point
+ * @n: number of space
  * Description: Prints diagonals
- * @n: number of spaces
  * Return: void
  */
 void print_diagonal(int n)
