@@ -2,12 +2,10 @@
 
 /**
  * print_diagonal - entry point
- *
  * Description: Prints diagonals
- *@n: number of spaces
+ * @n: number of spaces
  * Return: void
  */
-
 void print_diagonal(int n)
 {
 	int row, num_lines;
