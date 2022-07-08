@@ -48,6 +48,7 @@ int isPrime(long int n)
 				return (0);
 			}
 		}
+
 	return (1);
 	}
 }
@@ -80,5 +81,6 @@ long int biggestFactor(long int a)
 			}
 		}
 	}
+
 	return (factor);
 }
