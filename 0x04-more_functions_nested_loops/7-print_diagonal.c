@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * print_diagonal - a function that draws a diagonal line
@@ -18,7 +18,7 @@ void print_diagonal(int n)
 				_putchar(' ');
 			_putchar('\\');
 
-			if (leng = n - 1)
+			if (leng == n - 1)
 				continue;
 
 			_putchar('\n');
