@@ -2,10 +2,12 @@
 
 /**
  * print_diagonal - entry point
- * @n: number of spac
+ * 
  * Description: Prints diagonals
+ * @n: number of spaces
  * Return: always 0
  */
+
 void print_diagonal(int n)
 {
 	int row, num_lines;
