@@ -4,8 +4,7 @@
  * print_diagonal - entry point
  * @n: number of spac
  * Description: Prints diagonals
- *
- * Return: void
+ * Return: always 0
  */
 void print_diagonal(int n)
 {
