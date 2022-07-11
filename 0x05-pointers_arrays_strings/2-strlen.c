@@ -7,8 +7,12 @@
  */
 int _strlen(char *s)
 {
-	int length;
+	int i;
 
-	length = sizeof(*s);
-	return (length);
+	i = 0;
+	while (*(s + i) != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
