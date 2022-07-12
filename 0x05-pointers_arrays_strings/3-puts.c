@@ -12,8 +12,8 @@ void _puts(char *str)
 	i = 0;
 	while (*(str + i) != '\0')
 	{
-		_putchar(*(str + i));
+		printf("'%c'", *(str + i));
 		i++;
 	}
-	_putchar('\n');
+	printf("\n");
 }
