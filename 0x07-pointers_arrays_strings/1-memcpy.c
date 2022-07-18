@@ -5,7 +5,6 @@
  * @dest: a pointer dest
  * @src: a pointer src 
  * @n: unsigned interger parameter
- *
  * Return: a pointer dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
