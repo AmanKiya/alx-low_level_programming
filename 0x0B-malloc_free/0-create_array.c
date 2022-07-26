@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * create_array - a function that creates an array of chars 
+ * create_array - a function that creates an array of chars
  * and initializes it with a specific char
- * @size: integer parameter 
+ * @size: integer parameter
  * @c: charater parameter
  *
  * Return: null if size equals 0 and a pointer ro an array
