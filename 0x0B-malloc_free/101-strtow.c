@@ -58,10 +58,9 @@ int countChars(char *str)
  */
 char **strtow(char *str)
 {
-	int numWords, numChars, i, j;
+	int numWords, numChars, j, i = 0;
 	char **words;
 
-	i = 0;
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	numWords = countWords(str);
