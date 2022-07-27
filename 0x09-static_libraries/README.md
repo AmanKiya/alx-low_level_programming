@@ -1,1 +1,1 @@
- this is the readme file for static libraries project.
+ this is a readme file for static libraries project.
