@@ -4,7 +4,7 @@
 /**
  * countWords - counts the numbers o words in the string
  * @str: source string
- * 
+ *
  * Return: the number of words.
  */
 int countWords(char *str)
@@ -91,7 +91,7 @@ char **strtow(char *str)
 			for (j = 0; j < numChars; j++)
 			{
 				*(*(words + i) + j) = *str;
-				str++; 
+				str++;
 			}
 			*(*(words + i) + j) = '\0';
 			i++;
