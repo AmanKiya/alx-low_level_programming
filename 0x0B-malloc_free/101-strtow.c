@@ -4,8 +4,7 @@
 /**
  * countWords - counts the numbers o words in the string
  * @str: source string
- *
- 
+ * 
  * Return: the number of words.
  */
 int countWords(char *str)
@@ -31,7 +30,6 @@ int countWords(char *str)
  * countChars - counts the numbers o characters in a string
  * @str: source string
  *
- *
  * Return: the number of words.
  */
 int countChars(char *str)
@@ -55,7 +53,6 @@ int countChars(char *str)
 /**
  * strtow - separates the character to an string of words
  * @str: source string
- *
  *
  * Return: the pointer to the new array of words.
  */
@@ -94,7 +91,8 @@ char **strtow(char *str)
 			for (j = 0; j < numChars; j++)
 			{
 				*(*(words + i) + j) = *str;
-				str++; }
+				str++; 
+			}
 			*(*(words + i) + j) = '\0';
 			i++;
 		}
