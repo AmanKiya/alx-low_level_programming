@@ -1,43 +1,46 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * string_nconcat - concatenate string arguments
- * @s1: the first string
- * @s2: the second string to be concatinated to 1
+ * string_nconcat- concatenate 2 strings, the size of 2nd string is defined.
+ * @s1: string 1.
+ * @s2: string 2, concatenated to 1
  * @n: size of s2 concatenated
- *
- * Return: pointer to the concatenated string
+ * Return: pointer to the concatenated string.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int s1len, s2len, nsize, i;
-	char *strconc;
+	unsigned int s1Size, s2Size, i, nSize;
+	char *conStr;
 
 	i = 0;
-	s1len = 0;
-	s2len = 0;
-	
+	s1Size = 0;
+	s2Size = 0;
+
 	if (s1 == NULL)
-		s1 = "";
+	s1 = "";
 	if (s2 == NULL)
-		s2 = "";
-	while (*(s1 + s1len))
-		s1len++;
-	while (*(s2 + s2len))
-		s2len++;
-	if (n >= s2len)
-		nsize = s2len;
+	s2 = "";
+
+	while (*(s1 + s1Size))
+		s1Size++;
+	while (*(s2 + s2Size))
+		s2Size++;
+
+	if (n >= s2Size)
+		nSize = s2Size;
 	else
-		nsize = n;
-	strconc = malloc((s1len + s2len + 1) * sizeof(char));
-	if (strconc == NULL)
+		nSize = n;
+
+	conStr = malloc((s1Size + nSize + 1) * sizeof(char));
+	if (conStr == NULL)
 		return (NULL);
-	for (i = 0; i < s1len; i++)
-		*(strconc + i) = *(s1 + i);
-	for (i = s1len; i < (s1len + nsize); i++)
-		*(strconc + i) = *(s2 + i - s1len);
-	*(strconc + i) = '\0';
-	return (strconc);
+
+	for (i = 0; i < s1Size; i++)
+		*(conStr + i) = *(s1 + i);
+	for (i = s1Size; i < (s1Size + nSize); i++)
+		*(conStr + i) = *(s2 + i - s1Size);
+	*(conStr + i) = '\0';
+
+	return (conStr);
 }
