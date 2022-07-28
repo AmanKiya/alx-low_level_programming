@@ -54,7 +54,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (i = 0; i < (nmemb * size); i++)
 		*(newArray + i) = 0;
-		return (newArray);
+		
+	return (newArray);
 }
 /**
  * main- multiplies 2 positive numbers.
