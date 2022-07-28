@@ -7,6 +7,7 @@
  * @s1: the first string
  * @s2: the second string to be concatinated to 1
  * @n: size of s2 concatenated
+ *
  * Return: pointer to the concatenated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -22,12 +23,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	
 	while (*(s1 + s1len))
 		s1len++;
 	while (*(s2 + s2len))
 		s2len++;
-
 	if (n >= s2len)
 		nsize = s2len;
 	else
@@ -35,7 +34,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	strconc = malloc((s1len + s2len + 1) * sizeof(char));
 	if (strconc == NULL)
 		return (NULL);
-
 	for (i = 0; i < s1len; i++)
 		*(strconc + i) = *(s1 + i);
 	for (i = s1len; i < (s1len + nsize); i++)
