@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < s1len; i++)
 		*(strconc + i) = *(s1 + i);
 	for (i = s1len; i < (s1len + nsize); i++)
-		*(strconc + i) = *(s2 + i);
+		*(strconc + i) = *(s2 + i - s1len);
 	*(strconc + i) = '\0';
 	return (strconc);
 }
