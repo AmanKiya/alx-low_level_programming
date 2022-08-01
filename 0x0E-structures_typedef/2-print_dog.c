@@ -1,9 +1,9 @@
-#include "dog.h"
 #include <stdio.h>
+#include "dog.h"
 /**
- * print_dog - a function that prints a struct dog
- * @d: structure element
- * Return: nothing
+ * print_dog - prints the content of struct dog.
+ * @d: pointer to the struct
+ * Return: content.
  */
 void print_dog(struct dog *d)
 {
@@ -17,6 +17,6 @@ void print_dog(struct dog *d)
 		if (!d->owner)
 			printf("Owner: (nil)\n");
 		else
-			printf("owner: %s\n", d->owner);
+			printf("Owner: %s\n", d->owner);
 	}
 }
