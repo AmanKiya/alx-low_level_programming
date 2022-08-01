@@ -3,9 +3,9 @@
 
 struct dog
 {
-	chat *name;
+	char *name;
 	float age;
 	char *owner;
-}
+};
 
 #endif
