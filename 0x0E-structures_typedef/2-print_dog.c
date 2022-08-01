@@ -4,7 +4,6 @@
 /**
  * print_dog - a function that prints a struct dog
  * @d: structure element
- *
  * Return: nothing
  */
 void print_dog(struct dog *d)
