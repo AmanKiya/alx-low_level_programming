@@ -1,12 +1,9 @@
 #include "main.h"
-
 /**
- * read_textfile - a function that reads a text file and prints it to the POSIX std out.
- * @filename: the name of the file to be read
+ * read_textfile - reads a text file and prints it.
+ * @filename: name of file to be readed
  * @letters: the number of letters it should read and print
- * Return: the actual number of letters it could read and print
- * 0 if the filename is NULL
- * 0 IF write fails or doesnot write the expected amount of bytes.
+ * Return: 2 success, otherwise 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -15,23 +12,23 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!filename)
 		return (0);
-	
-	/* create the buffer print_field*/
+
+	/*Create the buffer print_field*/
 	print_field = malloc(letters * sizeof(char));
 	if (print_field == NULL)
 		return (0);
-	
-	/*open the file*/
+
+	/*Open the file*/
 	file = open(filename, O_RDONLY);
 	if (file == -1)
 		return (0);
-	
-	/*read the file and save in buffer*/
+
+	/*Read the file and save in buffer*/
 	read_file = read(file, print_field, letters);
-	/*write as standard output*/
+	/*Write as standard output*/
 	write(STDOUT_FILENO, print_field, read_file);
 
 	close(file);
 	free(print_field);
-	return (read_file);	
+	return (read_file);
 }
