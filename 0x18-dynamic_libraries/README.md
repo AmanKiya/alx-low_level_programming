@@ -29,4 +29,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Patrick DeYoreo** - [patrickdeyoreo](https://github.com/patrickdeyoreo)
+* **Amanuel Mekonnen** - (https://github.com/AmanKiya)
